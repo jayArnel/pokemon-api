@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Who's That Pokemon?</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    </head>
+    <body>
+        <div class="section no-pad-bot " id="index-banner">
+            <div class="container center-align grey lighten-2">
+                <h1>Who's that Pokemon?</h1>
+                <span>Points: <span class="points">0</span>/<span class="count"></span></span>
+                <br><br>
+                <span class="pokemon-sprite">
+                    <img src="">
+                    <div class="preloader-wrapper big active">
+                      <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                          <div class="circle"></div>
+                        </div><div class="gap-patch">
+                          <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                          <div class="circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                </span>
+                <div class="row">
+                    <center>
+                        <div class="input-field left-align" style="width:200px">
+                            <input id="password" type="text" class="validate" disabled>
+                            <label for="password" class="">Name</label>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over" class="modal" style="width:400px">
+            <div class="modal-content">
+              <h4>GAME OVER!</h4>
+              <p>You guessed wrong.</p>
+              <p>Total Points: <span class="points">0</span></p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn">Play Again</a>
+            </div>
+          </div>
+        <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script src="js/pokemon.js"></script>
+    </body>
+</html>

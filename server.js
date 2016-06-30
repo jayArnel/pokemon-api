@@ -5,6 +5,7 @@ app.use(express.static('static'));
 
 var pages = {
    '/': '/index.html',
+   '/play': '/play.html'
 }
 
 for (page in pages) {
